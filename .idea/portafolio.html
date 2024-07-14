@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de VatoDev</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgba(99, 218, 142, 0.35);
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #31ffc7 0%, #f58e57 100%);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+        }
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 20px; /* Aumentamos el margen inferior */
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .project {
+            background-color: rgba(255, 255, 255, 0.8); /* Hacemos más visible el fondo */
+            border-radius: 8px; /* Aumentamos el radio de borde */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cambiamos la sombra */
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease; /* Añadimos una transición al hacer hover */
+        }
+        .project:hover {
+            transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+        }
+        .project h2 {
+            color: #333;
+            margin-bottom: 10px; /* Aumentamos el margen inferior */
+        }
+        .project p {
+            color: #666;
+        }
+        .bio {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px; /* Añadimos margen superior */
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Portafolio</h1>
+    <p>Programador Fullstack | Entusiasta de la tecnología</p>
+    <nav>
+        <ul>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#github">GitHub</a></li> <!-- Nuevo enlace a tu cuenta de GitHub -->
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div id="proyectos" class="bio">
+        <p>💻👨🏻‍💻 20 años, programador en ascenso y estudiante de Ingeniería de Sistemas. Enamorado del desarrollo Fullstack y aficionado al anime y cosas raras. ¡Explorando el código y descubriendo nuevos mundos digitales! 🌟</p>
+    </div>
+    <section class="project">
+        <h2>Agendador de Citas para la Biblioteca Pablo Antonio Cuadra</h2>
+        <p>Proyecto desarrollado para la Biblioteca Pablo Antonio Cuadra de la Universidad Americana (UAM), con el objetivo de automatizar y gestionar las reservas de la sala privada.</p>
+        <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat</p>
+        <p><strong>Funcionalidades:</strong> Automatización de reservas, gestión de horarios, prevención de choques de fechas, integración con SQL Server para almacenamiento de datos. Incluye un exportador de reportes en Excel para facilitar la generación y análisis de datos.</p>
+        <a href="https://github.com/ElVatoEste/BibliotecaDev" class="btn">Ver Proyecto</a>
+    </section>
+    <section class="project">
+        <h2>Sistema Personal de Gestión Estudiantil</h2>
+        <p>Sistema diseñado para permitir a los estudiantes categorizar apuntes, establecer metas, marcar eventos y organizar un cronograma cada semestre.</p>
+        <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat, JavaScript</p>
+        <p><strong>Funcionalidades:</strong> Gestión de apuntes y metas, marcado de eventos, organización de cronograma semestral. Utiliza JavaScript para mejorar la interactividad y experiencia del usuario.</p>
+        <a href="https://github.com/Criqua/GestorEstudiante" class="btn">Ver Proyecto</a>
+    </section>
+
+</div>
+<section id="github" class="bio">
+    <p>¡Visita mi perfil en GitHub para ver más proyectos!</p>
+    <a href="https://github.com/ElVatoEste" target="_blank">GitHub</a>
+</section>
+<footer>
+    <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
