@@ -4,21 +4,38 @@ body {
     background-color: rgba(99, 218, 142, 0.35);
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(120deg, #31ffc7 0%, #f58e57 100%);
+    background-image: linear-gradient(
+            120deg,
+            #31ffc7 0%,
+            #f58e57 100%
+    );
+
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
     overflow: visible;
 }
 
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+
 @keyframes gradientBackground {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -84,6 +101,15 @@ header nav ul li a {
 }
 
 .project {
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
     background-color: rgba(255, 255, 255, 0.58);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
