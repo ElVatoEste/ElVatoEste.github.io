@@ -1,17 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: rgba(99, 218, 142, 0.35);
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(
-            120deg,
-            #31ffc7 0%,
-            #f58e57 100%
-    );
-
-    background-size: 400% 400%;
-    animation: gradientBackground 15s ease infinite;
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+    color: #eee;
+    animation: animation 100s linear infinite;
     overflow: visible;
 }
 
@@ -26,15 +20,9 @@ body {
     }
 }
 
-@keyframes gradientBackground {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
+@keyframes animation {
+    100%{
+        background-position:0px -3000px;
     }
 }
 
@@ -71,8 +59,8 @@ header nav ul li a {
     max-width: 800px;
     margin: 120px auto 0 auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.58);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(7, 7, 7, 0.58);
+    box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -109,9 +97,9 @@ header nav ul li a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 
-    background-color: rgba(255, 255, 255, 0.58);
+    background-color: rgba(7, 7, 7, 0.58);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
     padding: 1.5rem;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
@@ -122,12 +110,12 @@ header nav ul li a {
 }
 
 .project h2 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .project p {
-    color: #666;
+    color: #ffffff;
 }
 
 .project .btn {
@@ -217,9 +205,9 @@ footer .social a {
     margin: 2rem auto;
     text-align: center;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.58);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(7, 7, 7, 0.58);
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
 }
 
 .category h3 {
@@ -246,10 +234,6 @@ footer .social a {
     font-size: 2rem;
     margin-right: 0.5rem;
     transition: color 0.3s ease;
-}
-
-.items .item:hover i {
-    color: #007bff; /* Cambia a tu color preferido */
 }
 
 #particles-js {
