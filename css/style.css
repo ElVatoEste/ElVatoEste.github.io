@@ -183,6 +183,28 @@ footer .social a {
 }
 
 .skills-section {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.category {
+
     view-timeline-name: --card;
     view-timeline-axis: block;
 
@@ -198,15 +220,6 @@ footer .social a {
     background-color: rgba(255, 255, 255, 0.58);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-.skills-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.category {
-    margin-bottom: 2rem;
 }
 
 .category h3 {
