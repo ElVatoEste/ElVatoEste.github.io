@@ -1,13 +1,6 @@
 
 {
-  "particles": {
-    "number": {
-      "value": 50,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
+  "particles": {"number": {"value": 50, "density": {"enable": true, "value_area": 800}},
     "color": {
       "value": "#ffffff"
     },
