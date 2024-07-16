@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de VatoDev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="js/particles.json"></script>
 </head>
 <body>
 <header>
@@ -19,37 +22,70 @@
     </div>
 </header>
 
-
-
 <div class="container">
     <div id="particles-js"></div>
-        <div class="bio">
-            <img src="drawable/foto.jpeg" alt="Foto de Manuel Alejandro Lopez" class="logo">
-            <h1>Manuel Alejandro López Velásquez</h1>
-            <p>💻👨🏻‍💻 20 años, programador en ascenso y estudiante de Ingeniería de Sistemas.<br>
-                Enamorado del desarrollo Fullstack y aficionado al anime y cosas raras 🌟</p>
-            <p><i class="fa fa-map-marker-alt"></i> Managua, Nicaragua</p>
-        </div>
+    <div class="bio">
+        <img src="drawable/foto.jpeg" alt="Foto de Manuel Alejandro Lopez" class="logo">
+        <h1>Manuel Alejandro López Velásquez</h1>
+        <p>💻👨🏻‍💻 20 años, programador en ascenso y estudiante de Ingeniería de Sistemas.<br>
+            Enamorado del desarrollo Fullstack y aficionado al anime y cosas raras 🌟</p>
+        <p><i class="fa fa-map-marker-alt"></i> Managua, Nicaragua</p>
+    </div>
 
-        <div id="proyectos" class="projects">
-            <section class="project">
-                <h2>Agendador de Citas para la Biblioteca Pablo Antonio Cuadra</h2>
-                <p>Proyecto desarrollado para la Biblioteca Pablo Antonio Cuadra de la Universidad Americana (UAM), con el objetivo de automatizar y gestionar las reservas de la sala privada.</p>
-                <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat</p>
-                <p><strong>Funcionalidades:</strong> Automatización de reservas, gestión de horarios, prevención de choques de fechas, integración con SQL Server para almacenamiento de datos. Incluye un exportador de reportes en Excel para facilitar la generación y análisis de datos.</p>
-                <a href="https://github.com/ElVatoEste/BibliotecaDev" class="btn">Ver Proyecto</a>
-                <a href="img_bib.html" class="btn" target="_blank">Ver Imágenes</a>
-            </section>
+    <div id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="category">
+                <h3>☕ Languages</h3>
+                <div class="items">
+                    <div class="item"><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</div>
+                    <div class="item"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</div>
+                    <div class="item"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+                    <div class="item"><i class="fab fa-java" style="color: #007396;"></i> Java</div>
+                    <div class="item"><i class="fab fa-python" style="color: #3776ab;"></i> Python</div>
+                    <!-- Agrega más íconos de lenguajes aquí -->
+                </div>
+            </div>
 
-            <section class="project">
-                <h2>Sistema Personal de Gestión Estudiantil</h2>
-                <p>Sistema diseñado para permitir a los estudiantes categorizar apuntes, establecer metas, marcar eventos y organizar un cronograma cada semestre.</p>
-                <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat, JavaScript</p>
-                <p><strong>Funcionalidades:</strong> Gestión de apuntes y metas, marcado de eventos, organización de cronograma semestral. Utiliza JavaScript para mejorar la interactividad y experiencia del usuario.</p>
-                <a href="https://github.com/Criqua/GestorEstudiante" class="btn">Ver Proyecto</a>
-                <a href="img_ges.html" class="btn" target="_blank">Ver Imágenes</a>
-            </section>
+            <div class="category">
+                <h3>📚 Frameworks and Libraries</h3>
+                <div class="items">
+                    <div class="item"><i class="fab fa-react" style="color: #61dafb;"></i> React</div>
+                    <div class="item"><i class="fab fa-node" style="color: #339933;"></i> Node.js</div>
+                    <!-- Agrega más íconos de frameworks aquí -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🛠️ Tools</h3>
+                <div class="items">
+                    <div class="item"><i class="fab fa-docker" style="color: #2496ed;"></i> Docker</div>
+                    <div class="item"><i class="fab fa-github" style="color: #181717;"></i> GitHub</div>
+                    <!-- Agrega más íconos de herramientas aquí -->
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div id="proyectos" class="projects">
+        <section class="project">
+            <h2>Agendador de Citas para la Biblioteca Pablo Antonio Cuadra</h2>
+            <p>Proyecto desarrollado para la Biblioteca Pablo Antonio Cuadra de la Universidad Americana (UAM), con el objetivo de automatizar y gestionar las reservas de la sala privada.</p>
+            <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat</p>
+            <p><strong>Funcionalidades:</strong> Automatización de reservas, gestión de horarios, prevención de choques de fechas, integración con SQL Server para almacenamiento de datos. Incluye un exportador de reportes en Excel para facilitar la generación y análisis de datos.</p>
+            <a href="https://github.com/ElVatoEste/BibliotecaDev" class="btn">Ver Proyecto</a>
+            <a href="img_bib.html" class="btn" target="_blank">Ver Imágenes</a>
+        </section>
+
+        <section class="project">
+            <h2>Sistema Personal de Gestión Estudiantil</h2>
+            <p>Sistema diseñado para permitir a los estudiantes categorizar apuntes, establecer metas, marcar eventos y organizar un cronograma cada semestre.</p>
+            <p><strong>Tecnologías:</strong> Java, Java Server Faces (JSF), XHTML, PrimeFaces, SQL Server, Apache Tomcat, JavaScript</p>
+            <p><strong>Funcionalidades:</strong> Gestión de apuntes y metas, marcado de eventos, organización de cronograma semestral. Utiliza JavaScript para mejorar la interactividad y experiencia del usuario.</p>
+            <a href="https://github.com/Criqua/GestorEstudiante" class="btn">Ver Proyecto</a>
+            <a href="img_ges.html" class="btn" target="_blank">Ver Imágenes</a>
+        </section>
+    </div>
 </div>
 
 <section id="github" class="bio">
@@ -65,7 +101,5 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<script src="js/particles.json"></script>
 </body>
 </html>
