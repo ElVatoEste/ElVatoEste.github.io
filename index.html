@@ -125,5 +125,24 @@
     </div>
 </footer>
 
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Desplazando hacia abajo
+            header.style.top = "-125px"; // Ajusta el valor según la altura de tu header
+        } else {
+            // Desplazando hacia arriba
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+
 </body>
 </html>
