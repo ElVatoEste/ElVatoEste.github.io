@@ -173,8 +173,15 @@ footer .social a {
 }
 
 .skills-section {
-    margin-bottom: 2rem;
+    padding-top: 20px;
     text-align: center;
+
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
 
     view-timeline-name: --card;
     view-timeline-axis: block;
@@ -184,13 +191,6 @@ footer .social a {
 
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
-
-
-}
-
-.skills-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .category {
