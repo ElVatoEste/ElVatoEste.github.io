@@ -88,6 +88,8 @@
                 <div class="items">
                     <div class="item"> <img src="icons/sqlserver.svg" alt="SqlServer" style="width: 26px; height: 24px; padding-right: 5px"> SQL Server </div>
                     <div class="item"> <img src="icons/postgresql.svg" alt="PostgreSQL" style="width: 24px; height: 24px; padding-right: 5px"> PostgreSQL </div>
+                    <div class="item"> <img src="icons/mysql.svg" alt="MySql" style="width: 24px; height: 24px; padding-right: 5px"> MySql </div>
+
 
                 </div>
             </div>
@@ -133,10 +135,9 @@
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > lastScrollTop) {
-            // Desplazando hacia abajo
-            header.style.top = "-125px"; // Ajusta el valor según la altura de tu header
+            header.style.top = "-125px";
         } else {
-            // Desplazando hacia arriba
+
             header.style.top = "0";
         }
 
