@@ -80,7 +80,7 @@ header nav ul li a {
 
 .bio {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .bio img.logo {
@@ -183,7 +183,6 @@ footer .social a {
 }
 
 .skills-section {
-    padding-top: 20px;
     text-align: center;
 
 }
