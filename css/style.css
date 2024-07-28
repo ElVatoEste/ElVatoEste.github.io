@@ -162,6 +162,10 @@ footer .social a {
     font-size: 1.5rem;
 }
 
+.elevate-text {
+    transform: translateY(-4px);
+    display: inline-block;
+}
 
 
 @media (max-width: 768px) {
