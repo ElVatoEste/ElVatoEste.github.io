@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imágenes - Agendador de Citas para la Biblioteca Pablo Antonio Cuadra</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha384-vxwo5DEozTvN8vEUN4uHuhXPrA8TFlpiXlz5NdFRSsgA4TjI3b7Jyy7OHs4QIIoN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .images {
             display: flex;
@@ -16,38 +17,12 @@
             max-width: 100%;
             height: auto;
         }
-        .header-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .header-content nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        .header-content nav ul li {
-            display: inline;
-            margin-left: 10px;
-        }
-        .header-content nav ul li a {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .header-content nav ul li a:hover {
-            background-color: #0056b3;
-        }
-
     </style>
 </head>
 <body>
 <header>
     <div class="header-content">
-        <h1>Imágenes del Proyecto Biblioteca Pablo Antonio Cuadra</h1>
+        <h1>Biblioteca Pablo Antonio Cuadra</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Volver</a></li>
@@ -67,4 +42,24 @@
     <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
 </footer>
 </body>
+
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Desplazando hacia abajo
+            header.style.top = "-125px"; // Ajusta el valor según la altura de tu header
+        } else {
+            // Desplazando hacia arriba
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+
 </html>
