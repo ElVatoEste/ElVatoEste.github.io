@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 @keyframes show {
     from {
@@ -260,3 +264,4 @@ footer .social a {
     left: 0;
     z-index: -1;
 }
+
