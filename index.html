@@ -123,31 +123,29 @@
 <footer>
     <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
     <div id="redes" class="social">
-        <a href="https://github.com/ElVatoEste" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/manuel-alejandro-lopez/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:vatodevcontacto@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-<!--    <a style="font-size: 1rem">vatodevcontacto@gmail.com</a> -->
-        <a href="https://www.instagram.com/vato_dev" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/ElVatoEste" target="_blank"><i class="fab fa-github" style="margin: 0 10px"></i></a>
+        <a href="https://www.linkedin.com/in/manuel-alejandro-lopez/" target="_blank"><i style="margin: 0 10px" class="fab fa-linkedin"></i></a>
+        <a  target="_blank" style="padding-left: 10px"><i class="fa-regular fa-envelope"></i></a>
+        <a href="mailto:vatodevcontacto@gmail.com" style="align-items: center; color: #fff; text-decoration: none; font-size: 1rem;">
+            vatodevcontacto@gmail.com
+        </a>
+        <a href="https://www.instagram.com/vato_dev" target="_blank"><i style="margin: 0 10px" class="fab fa-instagram"></i></a>
     </div>
 </footer>
 
+
 <!-- Necesito implementar experiencia, mejorar el fondo, añadir particulas, smooth scroll y mejorar proyectos con pre screen, y quitar la redirecion de webs  -->
 
+
 <script>
-    let lastScrollTop = 0;
-    const header = document.querySelector("header");
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
 
-    window.addEventListener("scroll", function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-            header.style.top = "-125px";
-        } else {
-
-            header.style.top = "0";
-        }
-
-        lastScrollTop = scrollTop;
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 </script>
 

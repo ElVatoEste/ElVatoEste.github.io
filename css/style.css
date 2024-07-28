@@ -147,7 +147,7 @@ header nav ul li a {
 footer {
     text-align: center;
     margin-top: 20px;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #333;
     color: #fff;
 }
@@ -158,10 +158,11 @@ footer .social {
 
 footer .social a {
     color: #fff;
-    margin: 0 10px;
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+
 
 @media (max-width: 768px) {
     .container {
