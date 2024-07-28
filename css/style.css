@@ -72,7 +72,6 @@ header nav ul li a {
 
 
 .container {
-    max-width: 800px;
     margin: 120px auto 0 auto;
     padding: 2rem;
     background-color: rgba(7, 7, 7, 0.58);
@@ -80,6 +79,19 @@ header nav ul li a {
     border-radius: 8px;
     position: relative;
     z-index: 1;
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
 }
 
 .bio {
@@ -103,6 +115,16 @@ header nav ul li a {
     font-size: 1.1rem;
 }
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .project {
     view-timeline-name: --card;
     view-timeline-axis: block;
@@ -113,16 +135,31 @@ header nav ul li a {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 1rem);
     background-color: rgba(7, 7, 7, 0.58);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
     transition: transform 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-details {
+    padding: 1.5rem;
+}
+
+.project-details h2, .project-details p, .project-details .btn {
+    color: #fff;
 }
 
 .project h2 {
@@ -134,7 +171,7 @@ header nav ul li a {
     color: #ffffff;
 }
 
-.project .btn {
+.project-details .btn {
     display: inline-block;
     background-color: #333;
     color: #fff;
@@ -142,10 +179,26 @@ header nav ul li a {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+
 }
 
-.project .btn:hover {
+.project .btn{
+
+}
+
+.project-details .btn:hover {
     background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project {
+        width: 100%;
+    }
 }
 
 footer {
