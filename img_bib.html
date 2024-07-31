@@ -20,6 +20,9 @@
     </style>
 </head>
 <body>
+
+<div id="particles-js"></div>
+
 <header>
     <div class="header-content">
         <h1>Biblioteca Pablo Antonio Cuadra</h1>
@@ -42,6 +45,14 @@
     <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
 </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+</script>
 
 <script>
     let lastScrollTop = 0;
