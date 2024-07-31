@@ -213,6 +213,7 @@ footer {
 
 footer .social {
     margin-top: 10px;
+
 }
 
 footer .social a {
@@ -317,7 +318,7 @@ footer .social a {
     height: 150%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 
