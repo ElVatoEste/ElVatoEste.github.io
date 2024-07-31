@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:font-size="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" href="drawable/vato.png" type="image/x-icon">
 </head>
 
 <body>
+
+<script>
+    if (window.location.pathname === '/index.html') {
+        window.location.replace("https://vatodev.xyz/");
+    }
+</script>
+
+<div id="particles-js"></div>
+
 <header>
     <div class="header-content">
         <nav>
@@ -27,8 +37,9 @@
     </div>
 </header>
 
+
+
 <div class="container">
-    <div id="particles-js"></div>
     <div class="bio">
         <img src="drawable/foto.jpeg" alt="Foto de Manuel Alejandro Lopez" class="logo">
         <h1>Manuel Alejandro López Velásquez</h1>
@@ -136,15 +147,23 @@
         <a href="https://www.linkedin.com/in/manuel-alejandro-lopez/" target="_blank"><i style="margin: 0 10px" class="fab fa-linkedin"></i></a>
         <a  target="_blank" style="padding-left: 10px"><i class="fa-regular fa-envelope"></i></a>
         <a href="mailto:vatodevcontacto@gmail.com">
-            <a class="elevate-text" style=" padding-left: 3px; align-items: center; color: #fff; text-decoration: none; font-size: 1rem;">vatodevcontacto@gmail.com</a>
+            <span class="elevate-text" style="padding-left: 3px; align-items: center; color: #fff; text-decoration: none; font-size: 1rem;">vatodevcontacto@gmail.com</span>
         </a>
         <a href="https://www.instagram.com/vato_dev" target="_blank"><i style="margin: 0 15px" class="fab fa-instagram"></i></a>
     </div>
 </footer>
 
 
-<!-- Necesito implementar experiencia, mejorar el fondo, añadir particulas, smooth scroll y mejorar proyectos con pre screen  -->
+<!-- Necesito implementar experiencia, smooth scroll y mejorar proyectos con pre screen  -->
 
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+</script>
 
 <script>
 
