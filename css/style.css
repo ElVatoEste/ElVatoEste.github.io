@@ -20,11 +20,11 @@ body::-webkit-scrollbar {
 @keyframes show {
     from {
         opacity: 0;
-        scale: 25%;
+        transform: scale(0.25);
     }
     to {
         opacity: 1;
-        scale: 100%;
+        transform: scale(1);
     }
 }
 
@@ -42,6 +42,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: top 0.3s;
 }
@@ -312,8 +313,8 @@ footer .social a {
 
 #particles-js {
     position: fixed;
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
