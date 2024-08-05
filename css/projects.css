@@ -1,0 +1,26 @@
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.image-info img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 40px;
+}
+.image-info div {
+    text-align: justify;
+    max-width: 500px;
+}

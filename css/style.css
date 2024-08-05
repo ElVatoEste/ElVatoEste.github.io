@@ -8,25 +8,17 @@
     z-index: 0;
 }
 
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Yu Gothic", cursive;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background: rgba(4, 4, 4, 0.93);
-    /*url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
-*/
     color: #eee;
-    animation: animation 100s linear infinite;
     overflow: visible;
     width: 100%;
     height: 100%;
-}
-
-@keyframes animation {
-    100%{
-        background-position:0 -3000px;
-    }
 }
 
 body::-webkit-scrollbar {
@@ -125,7 +117,10 @@ header nav ul li a {
 
 .bio p {
     font-size: 1.1rem;
+    line-height: 1.8;
+
 }
+
 
 .projects-container {
     display: flex;
@@ -261,10 +256,16 @@ footer .social a {
     }
 }
 
+@font-face {
+    font-family: "CodeFont";
+    src: url("../fonts/FiraCode-Light.ttf") format("truetype");
+}
+
 .skills-section {
     text-align: center;
-
+    font-family: "CodeFont", cursive;
 }
+
 
 .skills-section h2 {
     font-size: 2.5rem;
