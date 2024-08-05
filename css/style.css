@@ -10,7 +10,7 @@
 
 
 body {
-    font-family: "Yu Gothic";
+    font-family: "Yu Gothic", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -263,7 +263,7 @@ footer .social a {
 
 .skills-section {
     text-align: center;
-    font-family: "CodeFont";
+    font-family: "CodeFont", cursive;
 }
 
 
