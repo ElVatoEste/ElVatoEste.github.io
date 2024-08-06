@@ -132,6 +132,7 @@ header nav ul li a {
     padding: 2rem;
 }
 
+
 .project {
     view-timeline-name: --card;
     view-timeline-axis: block;
@@ -151,9 +152,6 @@ header nav ul li a {
     transition: transform 0.3s ease;
 }
 
-.project:hover {
-    transform: translateY(-5px);
-}
 
 .project-image {
     width: 100%;
@@ -165,6 +163,7 @@ header nav ul li a {
 .project-details {
     padding: 1.5rem;
 }
+
 
 .project-details h2, .project-details p, .project-details .btn {
     color: #fff;
