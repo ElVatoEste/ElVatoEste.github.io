@@ -327,6 +327,84 @@ footer .social a {
     transition: color 0.3s ease;
 }
 
+/* Experiencia laboral */
+
+.custom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.custom-col .custom-title {
+    padding: 0 0 20px 30px;
+}
+
+.custom-col .custom-contents {
+    padding: 0 30px;
+    border-left: 2px solid #666;
+}
+
+.custom-col .custom-contents .custom-box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #444;
+    background-color: rgba(7, 7, 7, 0.58);
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.custom-col .custom-contents .custom-box:hover {
+    box-shadow: 0 3px 12px 0 rgba(230, 101, 16, 0.82);
+    border: 1px solid transparent;
+}
+
+.custom-col .custom-contents .custom-box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #fd550a;
+    border: 2px solid rgba(182, 182, 182, 0.51);
+}
+
+.custom-box h4 {
+    position: relative;
+    color: #ff7f16;
+}
+
+.custom-box h3 {
+    font-size: 19px;
+    padding: 10px 0 6px;
+    color: #eee;
+}
+
+.custom-box p {
+    line-height: 1.2;
+    color: #ccc;
+    font-size: 17px;
+}
 
 
 
+@media (max-width: 768px) {
+    .custom-main.custom-row {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-row .custom-col:nth-child(2) {
+        margin-top: 30px;
+    }
+}
+.custom-section-title {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-bottom: 10px; /* Añade un margen inferior si es necesario */
+    text-align: center; /* Centrará el texto horizontalmente */
+    display: flex;
+    justify-content: center; /* Asegura el centrado en contenedores flex */
+    align-items: center; /* Asegura el centrado vertical en contenedores flex */
+}
