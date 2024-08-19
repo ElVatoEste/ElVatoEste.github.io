@@ -19,7 +19,6 @@ body {
     overflow: visible;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 body::-webkit-scrollbar {
@@ -79,7 +78,7 @@ header nav ul li a {
 
 
 .container {
-    margin: 120px auto 0 auto;
+    margin: 100px auto auto auto;
     padding: 2rem;
     background-color: rgba(7, 7, 7, 0.58);
     box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
@@ -252,7 +251,7 @@ header nav ul li a {
 footer {
     background: rgba(1, 0, 2, 0.76);
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
     color: #fff;
     z-index: 1;
     position: relative;
@@ -279,24 +278,7 @@ footer .social a {
 }
 
 
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-    }
 
-    .project {
-        padding: 1rem;
-    }
-
-    header nav ul {
-        text-align: center;
-    }
-
-    header nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
 
 @font-face {
     font-family: "CodeFont";
@@ -477,17 +459,18 @@ footer .social a {
         margin-top: 100px;
     }
 
+}
+
+@media screen and (max-width: 480px) {
     footer {
-        padding: 0.5rem 1rem;
-        text-align: center;
+        padding: 5vw 0;
     }
 
     footer .social {
-        margin-top: 5px;
+        gap: 15px;
     }
 
     footer .social a {
-        font-size: 1.2rem;
-        margin: 0 5px;
+        font-size: 1rem; /* Reducir aún más el tamaño de los íconos en pantallas muy pequeñas */
     }
 }
