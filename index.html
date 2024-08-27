@@ -319,7 +319,7 @@
             message: document.getElementById('message').value,
         };
 
-        const response = await fetch('/send-email', {
+        const response = await fetch('https://vatodev.xyz/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
