@@ -474,3 +474,78 @@ footer .social a {
         font-size: 1rem; /* Reducir aún más el tamaño de los íconos en pantallas muy pequeñas */
     }
 }
+
+
+/* Formulario Contacto */
+.contact-form {
+    background-color: rgba(7, 7, 7, 0.58);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(236, 231, 231, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff7f16;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .contact-form h2 {
+        font-size: 2rem;
+    }
+}

@@ -233,10 +233,26 @@
                 <p><strong>Estado:</strong><p style="color: #fa7676">En Proceso <i class="fa-solid fa-triangle-exclamation"></i></p>
             </div>
         </div>
+    </div>
 
-
-        <!-- Mas proyectos-->
-
+    <!-- Formulario de Contacto -->
+    <div id="contacto" class="contact-form">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </div>
 
 </div>
@@ -266,6 +282,7 @@
 
 <script>
 
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -291,6 +308,30 @@
         }
 
         lastScrollTop = scrollTop;
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+        };
+
+        const response = await fetch('/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+            alert('Correo enviado exitosamente');
+        } else {
+            alert('Hubo un problema al enviar el correo');
+        }
     });
 </script>
 
