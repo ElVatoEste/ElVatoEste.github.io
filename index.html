@@ -284,7 +284,7 @@
         console.log('Datos del formulario:', formData);
 
         try {
-            const response = await fetch('https://vatodev.xyz/send-email', {
+            const response = await fetch('/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
