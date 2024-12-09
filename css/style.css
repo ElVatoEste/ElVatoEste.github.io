@@ -111,10 +111,13 @@ header nav ul li a {
 
 .bio img.logo {
     width: 250px;
-    height: auto;
-    margin-bottom: 15px;
+    height: 250px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: 65% center;
+    margin-bottom: 15px;
 }
+
 
 .bio h1 {
     margin: 0;
