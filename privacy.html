@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - PRACTICA PRO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha384-vxwo5DEozTvN8vEUN4uHuhXPrA8TFlpiXlz5NdFRSsgA4TjI3b7Jyy7OHs4QIIoN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+    <div class="header-content">
+        <nav>
+            <ul>
+                <li><a>PRACTICA PRO</a></li>
+                <li><a href="/" style="color:#52c4ea">Volver</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <section class="privacy-policy">
+        <h2>Política de Privacidad</h2>
+        <p>
+            En cumplimiento de las Normativas de Datos de Google y con el firme compromiso de salvaguardar
+            su información, esta aplicación está dirigida a usuarios a partir de 15 años de edad, en un
+            entorno educativo de la <strong>Universidad Americana (UAM), Nicaragua</strong>. Dado que
+            su contenido aborda aspectos médicos e informativos, resulta fundamental una lectura detenida
+            de la presente política. A continuación, se describen los términos y condiciones relacionados
+            con la recolección, uso y protección de los datos personales de nuestros usuarios.
+        </p>
+
+        <h3>1. Datos Personales Recolectados</h3>
+        <p>
+            Únicamente se recopila la dirección de correo electrónico del usuario con el fin de validar
+            que se trate de una cuenta institucional. Posteriormente, se envía un código a dicha dirección
+            para verificar la autenticidad de la cuenta. No se almacena ni se comparte ningún otro tipo de
+            información personal con terceros.
+        </p>
+
+        <h3>2. Uso de la Contraseña</h3>
+        <p>
+            La contraseña que el usuario define para acceder a la aplicación es de uso exclusivo dentro
+            de este sistema. Bajo ninguna circunstancia se comparte con terceros ni se utiliza con fines
+            ajenos al inicio de sesión. Se recomienda al usuario mantener la confidencialidad de sus
+            credenciales para evitar accesos no autorizados.
+        </p>
+
+        <h3>3. Almacenamiento y Seguridad de la Información</h3>
+        <p>
+            Los datos recopilados permanecen seguros tanto en el dispositivo como en los sistemas
+            backend y base de datos de la aplicación. No se realiza ningún tipo de uso o cesión de la
+            información fuera de los fines propios de la verificación de la cuenta y la funcionalidad
+            básica del servicio. Implementamos medidas de seguridad destinadas a proteger contra accesos
+            no autorizados y garantizar la integridad de la información.
+        </p>
+
+        <h3>4. Eliminación de la Cuenta</h3>
+        <p>
+            El sistema no contempla la opción de eliminación de la cuenta en este momento. Todos los
+            usuarios deben mantener su cuenta activa para poder utilizar las funcionalidades de la
+            aplicación. En caso de requerir asistencia adicional, por favor comuníquese a través del
+            correo electrónico proporcionado más abajo.
+        </p>
+
+        <h3>5. Alcance de la Aplicación</h3>
+        <p>
+            La aplicación está orientada principalmente a jóvenes a partir de 15 años de edad, ya que
+            incluye contenidos relacionados con prácticas médicas o sanitarias. Se recomienda a los
+            usuarios hacer un uso responsable de la información y, en caso de ser menor de 15 años,
+            contar con la supervisión de un adulto.
+        </p>
+
+        <h3>6. Contacto</h3>
+        <p>
+            Para cualquier duda, inquietud o solicitud de información adicional sobre esta Política de
+            Privacidad, puede comunicarse al siguiente correo electrónico:
+            <br>
+            <strong><a href="mailto:vatodevcontacto@gmail.com">vatodevcontacto@gmail.com</a></strong>
+        </p>
+
+        <h3>7. Aceptación de la Política</h3>
+        <p>
+            Al utilizar la aplicación, usted reconoce haber leído y entendido esta Política de Privacidad,
+            así como acepta sus términos y condiciones. Nos reservamos el derecho de modificar este
+            documento en cualquier momento para adecuarnos a cambios normativos o a nuevos servicios
+            ofrecidos.
+        </p>
+
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+        console.log('particles.js loaded - callback');
+    });
+</script>
+
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Desplazando hacia abajo
+            header.style.top = "-160px"; // Ajusta el valor según la altura de tu header
+        } else {
+            // Desplazando hacia arriba
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+</body>
+</html>
