@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Cuenta - PRACTICA PRO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha384-vxwo5DEozTvN8vEUN4uHuhXPrA8TFlpiXlz5NdFRSsgA4TjI3b7Jyy7OHs4QIIoN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="icon" href="drawable/vato.png" type="image/x-icon">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+  <div class="header-content">
+    <nav>
+      <ul>
+        <li><a>PRACTICA PRO</a></li>
+        <li><a href="/" style="color:#52c4ea">Volver</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <section class="privacy-policy">
+    <h2>Eliminar Cuenta</h2>
+    <p>
+      En PRACTICA PRO nos comprometemos a brindarte control sobre tus datos personales. Si deseas
+      solicitar la eliminación de tu cuenta y los datos asociados, sigue las instrucciones detalladas
+      a continuación.
+    </p>
+
+    <h3>Pasos para Solicitar la Eliminación de Cuenta</h3>
+    <ol>
+      <li>
+        Envía un correo electrónico a
+        <a href="mailto:vatodevcontacto@gmail.com">vatodevcontacto@gmail.com</a>
+        desde la dirección de correo registrada en nuestra aplicación.
+      </li>
+      <li>
+        En el correo, incluye tu nombre completo y una solicitud explícita para la eliminación de tu cuenta.
+      </li>
+      <li>
+        Indica en el correo el motivo de tu solicitud (opcional).
+      </li>
+      <li>
+        Recibirás una confirmación de la eliminación de tu cuenta en un plazo de <strong>5 días hábiles</strong>.
+      </li>
+    </ol>
+
+    <h3>Datos que serán Eliminados</h3>
+    <p>
+      Una vez procesada la solicitud de eliminación, los siguientes datos serán eliminados permanentemente
+      de nuestro sistema:
+    </p>
+    <ul>
+      <li>Dirección de correo electrónico.</li>
+      <li>Credenciales de acceso.</li>
+      <li>Cualquier otro dato almacenado relacionado con tu cuenta.</li>
+    </ul>
+    <p>
+      <strong>Nota:</strong> Algunos datos pueden ser retenidos durante un período limitado para
+      cumplir con requisitos establecidos en el ámbito academico.
+    </p>
+
+    <h3>Importante</h3>
+    <p>
+      Recuerda que una vez que tu cuenta sea eliminada, no podrás recuperarla ni acceder a los servicios
+      proporcionados por PRACTICA PRO con los datos eliminados. Si tienes alguna duda antes de realizar
+      este proceso, contáctanos.
+    </p>
+
+    <h3>Contacto</h3>
+    <p>
+      Para cualquier consulta adicional, puedes comunicarte con nuestro equipo de soporte escribiendo a
+      <a href="mailto:vatodevcontacto@gmail.com">vatodevcontacto@gmail.com</a>.
+    </p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2024 VatoDev. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('particles.js loaded - callback');
+  });
+</script>
+
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Desplazando hacia abajo
+      header.style.top = "-160px"; // Ajusta el valor según la altura de tu header
+    } else {
+      // Desplazando hacia arriba
+      header.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+</body>
+</html>
